@@ -41,7 +41,7 @@ const columns = coordinates.map(([x, y], i) => {
   return `<g><title>Week of ${data.weeks[i].days[0].date}: ${count} contributions</title><rect x="${(x-8).toFixed(1)}" y="${y}" width="16" height="${h}" rx="4" fill="${colors[level]}"/>${grooves}</g>`;
 }).join('\n');
 const robot = `<path d="M-12-16h24v14h-24z" fill="#172b42"/><path d="M-9-13h18v7h-18z" fill="#c5f36b"/><path d="M-6-12h3v3h-3zm9 0h3v3H3z" fill="#172b42"/><path d="M-15-12h3v7h-3zm27 0h3v7h-3zM-8-2h5v3h-5zm11 0h5v3H3z" fill="#172b42"/><path d="M-1-22h2v6h-2z" fill="#172b42"/><circle cy="-23" r="3" fill="#7b6bf1"/>`;
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="556" viewBox="0 0 1200 556" role="img" aria-labelledby="title desc">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="508" viewBox="0 0 1200 508" role="img" aria-labelledby="title desc">
 <title id="title">jiassia's commit landscape</title>
 <desc id="desc">A tiny rover travels over ${weekly.length} weeks of real GitHub contributions. ${data.total} contributions from ${dates[0]} to ${dates.at(-1)}. Each column is one week.</desc>
 <defs>
@@ -55,7 +55,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="556" v
  .moving{animation:rover-jumps ${legs * .72}s linear infinite alternate}
  @keyframes rover-jumps{${jumpFrames.join('\n')}}
 </style>
-<rect x="1" y="1" width="1198" height="554" rx="28" fill="url(#sky)" stroke="#e2e9ee"/>
+<rect x="1" y="1" width="1198" height="506" rx="28" fill="url(#sky)" stroke="#e2e9ee"/>
 <rect x="32" y="180" width="1136" height="294" fill="url(#grid)" opacity=".8"/>
 <g fill="#172b42">
  <text x="68" y="57" class="mono" font-size="12" letter-spacing="2.2">PERSONAL WORKSPACE / 01</text>
@@ -80,8 +80,6 @@ ${columns}
 <path d="${path}" fill="none" stroke="#5c91a4" stroke-opacity=".2" stroke-width="1" stroke-dasharray="3 5"/>
 <g class="moving" style="transform:translate(${coordinates[0][0]}px,${coordinates[0][1]}px)"><g transform="scale(1.25)">${robot}</g></g>
 <g transform="translate(1137 405)"><path d="M0-27V48" stroke="#172b42" stroke-width="2"/><path d="M1-27h19l-7 9 7 9H1z" fill="#7b6bf1"/></g>
-<text x="69" y="508" class="mono" font-size="12" fill="#65798a">${dates[0]} <tspan fill="#9eafbd">→</tspan> ${dates.at(-1)}</text>
-<g transform="translate(825 499)"><circle cx="0" cy="4" r="4" fill="#73d8ba"/><text x="14" y="8" class="mono" font-size="11" fill="#65798a">1 COLUMN = 1 WEEK · UPDATED DAILY</text></g>
 </svg>\n`;
 const outDir = fileURLToPath(new URL('../assets/', import.meta.url));
 mkdirSync(outDir, {recursive:true});
