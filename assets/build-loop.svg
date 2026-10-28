@@ -1,0 +1,76 @@
+<svg width="1200" height="100" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="loopBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6" />
+      <stop offset="100%" stop-color="#F4EFE6" />
+    </linearGradient>
+
+    <filter id="pillShadow" x="-10%" y="-15%" width="120%" height="135%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#705540" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Base Container -->
+  <rect width="1200" height="100" rx="14" fill="url(#loopBg)" stroke="#E7DFD4" stroke-width="1.2" />
+
+  <!-- Forward Flow Connectors (Code -> Refine -> Share) -->
+  <!-- Connector 1: Code -> Refine -->
+  <g>
+    <line x1="320" y1="50" x2="520" y2="50" stroke="#E5DDD1" stroke-width="2" stroke-dasharray="4 4" />
+    <!-- Flowing Particle -->
+    <circle r="3.5" fill="#E0564C">
+      <animate attributeName="cx" values="320;520" dur="2.4s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="50;50" dur="2.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite" />
+    </circle>
+    <polygon points="520,46 528,50 520,54" fill="#C93D30" />
+  </g>
+
+  <!-- Connector 2: Refine -> Share -->
+  <g>
+    <line x1="670" y1="50" x2="870" y2="50" stroke="#E5DDD1" stroke-width="2" stroke-dasharray="4 4" />
+    <!-- Flowing Particle -->
+    <circle r="3.5" fill="#E0564C">
+      <animate attributeName="cx" values="670;870" dur="2.4s" begin="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="50;50" dur="2.4s" begin="0.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.8s" repeatCount="indefinite" />
+    </circle>
+    <polygon points="870,46 878,50 870,54" fill="#C93D30" />
+  </g>
+
+  <!-- Return Loop Track: Share -> Code (Curved Lower Trajectory) -->
+  <g>
+    <path d="M 945 74 C 945 92, 255 92, 255 74" fill="none" stroke="#E8DFD3" stroke-width="1.5" stroke-dasharray="5 5" />
+    <!-- Returning Animated Particle -->
+    <circle r="3" fill="#E0564C">
+      <animateMotion path="M 945,74 C 945,92 255,92 255,74" dur="2.4s" begin="1.6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.6s" repeatCount="indefinite" />
+    </circle>
+    <!-- Return Arrow pointing back up to Node 1 -->
+    <polygon points="259,71 255,75 251,71" fill="#C93D30" />
+  </g>
+
+  <!-- Node 1: Code -->
+  <g transform="translate(195, 26)">
+    <rect width="120" height="48" rx="24" fill="#FFFFFF" stroke="#E5DDD1" stroke-width="1.2" filter="url(#pillShadow)" />
+    <circle cx="24" cy="24" r="4" fill="#E0564C" />
+    <text x="36" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="9.5" font-weight="700" fill="#D64436" letter-spacing="0.05em">01</text>
+    <text x="54" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="650" fill="#1E1B18">Code</text>
+  </g>
+
+  <!-- Node 2: Refine -->
+  <g transform="translate(545, 26)">
+    <rect width="120" height="48" rx="24" fill="#FFFFFF" stroke="#E5DDD1" stroke-width="1.2" filter="url(#pillShadow)" />
+    <circle cx="24" cy="24" r="4" fill="#E0564C" />
+    <text x="36" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="9.5" font-weight="700" fill="#D64436" letter-spacing="0.05em">02</text>
+    <text x="54" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="650" fill="#1E1B18">Refine</text>
+  </g>
+
+  <!-- Node 3: Share -->
+  <g transform="translate(885, 26)">
+    <rect width="120" height="48" rx="24" fill="#FFFFFF" stroke="#E5DDD1" stroke-width="1.2" filter="url(#pillShadow)" />
+    <circle cx="24" cy="24" r="4" fill="#E0564C" />
+    <text x="36" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="9.5" font-weight="700" fill="#D64436" letter-spacing="0.05em">03</text>
+    <text x="54" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="650" fill="#1E1B18">Share</text>
+  </g>
+</svg>
