@@ -19,6 +19,19 @@ const peak = Math.max(1, ...weekly);
 const step = 1048 / (weekly.length - 1);
 const coordinates = weekly.map((count, i) => [76 + i * step, 407 - Math.round(Math.sqrt(count / peak) * 143)]);
 const path = coordinates.map(([x,y],i) => `${i ? 'L' : 'M'}${x.toFixed(1)},${y}`).join(' ');
+const jumpFrames = [];
+const legs = coordinates.length - 1;
+for (let i = 0; i < legs; i++) {
+  const [ax, ay] = coordinates[i];
+  const [bx, by] = coordinates[i + 1];
+  const clearance = 36 + Math.abs(by - ay) * .55;
+  for (const t of [0, .16, .32, .48, .64, .8, 1]) {
+    const flight = Math.max(0, (t - .16) / .84);
+    const x = ax + (bx - ax) * flight;
+    const y = ay + (by - ay) * flight - 4 * clearance * flight * (1 - flight);
+    jumpFrames.push(`${((i + t) / legs * 100).toFixed(5)}%{transform:translate(${x.toFixed(2)}px,${y.toFixed(2)}px)}`);
+  }
+}
 const colors = ['#e7eef2','#a9e8d3','#73d8ba','#3fba9e','#248c7c'];
 const columns = coordinates.map(([x, y], i) => {
   const count = weekly[i];
@@ -39,8 +52,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="556" v
 <style>
  text{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
  .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
- .parked{display:none}
- @media(prefers-reduced-motion:reduce){.moving{display:none}.parked{display:inline}}
+ .moving{animation:rover-jumps ${legs * .72}s linear infinite alternate}
+ @keyframes rover-jumps{${jumpFrames.join('\n')}}
 </style>
 <rect x="1" y="1" width="1198" height="554" rx="28" fill="url(#sky)" stroke="#e2e9ee"/>
 <rect x="32" y="180" width="1136" height="294" fill="url(#grid)" opacity=".8"/>
@@ -65,8 +78,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="556" v
 <rect x="68" y="465" width="1065" height="4" rx="2" fill="url(#floor)"/>
 ${columns}
 <path d="${path}" fill="none" stroke="#5c91a4" stroke-opacity=".2" stroke-width="1" stroke-dasharray="3 5"/>
-<g class="moving"><animateMotion dur="32s" repeatCount="indefinite" calcMode="paced" path="${path}"/>${robot}</g>
-<g class="parked" transform="translate(${coordinates[0][0]} ${coordinates[0][1]})">${robot}</g>
+<g class="moving" style="transform:translate(${coordinates[0][0]}px,${coordinates[0][1]}px)"><g transform="scale(1.25)">${robot}</g></g>
 <g transform="translate(1137 405)"><path d="M0-27V48" stroke="#172b42" stroke-width="2"/><path d="M1-27h19l-7 9 7 9H1z" fill="#7b6bf1"/></g>
 <text x="69" y="508" class="mono" font-size="12" fill="#65798a">${dates[0]} <tspan fill="#9eafbd">→</tspan> ${dates.at(-1)}</text>
 <g transform="translate(825 499)"><circle cx="0" cy="4" r="4" fill="#73d8ba"/><text x="14" y="8" class="mono" font-size="11" fill="#65798a">1 COLUMN = 1 WEEK · UPDATED DAILY</text></g>
