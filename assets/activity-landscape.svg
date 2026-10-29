@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="508" viewBox="0 0 1200 508" role="img" aria-labelledby="title desc">
 <title id="title">jiassia's commit landscape</title>
-<desc id="desc">A tiny rover travels over 53 weeks of real GitHub contributions. 200 contributions from 2025-10-26 to 2026-10-28. Each column is one week.</desc>
+<desc id="desc">A tiny rover travels over 53 weeks of real GitHub contributions. 219 contributions from 2025-10-26 to 2026-10-29. Each column is one week.</desc>
 <defs>
  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#dce5eb"/></pattern>
  <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#fafcfe"/><stop offset="1" stop-color="#eff6f5"/></linearGradient>
@@ -369,11 +369,11 @@
 98.07692%{transform:translate(1103.85px,361.00px)}
 98.07692%{transform:translate(1103.85px,361.00px)}
 98.38462%{transform:translate(1103.85px,361.00px)}
-98.69231%{transform:translate(1107.68px,336.68px)}
-99.00000%{transform:translate(1111.52px,323.44px)}
-99.30769%{transform:translate(1115.36px,321.29px)}
-99.61538%{transform:translate(1119.20px,330.23px)}
-100.00000%{transform:translate(1124.00px,357.00px)}}
+98.69231%{transform:translate(1107.68px,309.13px)}
+99.00000%{transform:translate(1111.52px,276.65px)}
+99.30769%{transform:translate(1115.36px,263.56px)}
+99.61538%{transform:translate(1119.20px,269.86px)}
+100.00000%{transform:translate(1124.00px,305.00px)}}
 </style>
 <rect x="1" y="1" width="1198" height="506" rx="28" fill="url(#sky)" stroke="#e2e9ee"/>
 <rect x="32" y="180" width="1136" height="294" fill="url(#grid)" opacity=".8"/>
@@ -384,7 +384,7 @@
 </g>
 <g transform="translate(907 42)">
  <rect width="226" height="100" rx="16" fill="#ffffff" stroke="#e0e8ee"/>
- <text x="21" y="48" font-size="34" font-weight="700" fill="#172b42">200</text>
+ <text x="21" y="48" font-size="34" font-weight="700" fill="#172b42">219</text>
  <text x="21" y="75" class="mono" font-size="12" fill="#65798a">CONTRIBUTIONS / 12 MONTHS</text>
  <g transform="translate(184 36)" fill="none" stroke="#7b6bf1" stroke-width="2"><circle r="12"/><path d="M0-7v14m-7-7H7"/></g>
 </g>
@@ -448,8 +448,8 @@
 <g><title>Week of 2026-10-04: 0 contributions</title><rect x="1055.5" y="407" width="16" height="47" rx="4" fill="#e7eef2"/><path d="M1058.5 419h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1058.5 431h10" stroke="#ffffff" stroke-opacity=".35"/></g>
 <g><title>Week of 2026-10-11: 7 contributions</title><rect x="1075.7" y="353" width="16" height="101" rx="4" fill="#73d8ba"/><path d="M1078.7 365h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1078.7 377h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1078.7 389h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1078.7 401h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1078.7 413h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1078.7 425h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1078.7 437h10" stroke="#ffffff" stroke-opacity=".35"/></g>
 <g><title>Week of 2026-10-18: 5 contributions</title><rect x="1095.8" y="361" width="16" height="93" rx="4" fill="#73d8ba"/><path d="M1098.8 373h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1098.8 385h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1098.8 397h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1098.8 409h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1098.8 421h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1098.8 433h10" stroke="#ffffff" stroke-opacity=".35"/></g>
-<g><title>Week of 2026-10-25: 6 contributions</title><rect x="1116.0" y="357" width="16" height="97" rx="4" fill="#73d8ba"/><path d="M1119.0 369h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 381h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 393h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 405h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 417h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 429h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 441h10" stroke="#ffffff" stroke-opacity=".35"/></g>
-<path d="M76.0,407 L96.2,407 L116.3,407 L136.5,372 L156.6,366 L176.8,331 L196.9,318 L217.1,372 L237.2,407 L257.4,357 L277.5,331 L297.7,339 L317.8,361 L338.0,407 L358.2,378 L378.3,407 L398.5,407 L418.6,407 L438.8,320 L458.9,323 L479.1,333 L499.2,264 L519.4,387 L539.5,407 L559.7,407 L579.8,407 L600.0,407 L620.2,407 L640.3,407 L660.5,407 L680.6,407 L700.8,407 L720.9,387 L741.1,407 L761.2,407 L781.4,407 L801.5,407 L821.7,407 L841.8,407 L862.0,407 L882.2,407 L902.3,407 L922.5,407 L942.6,407 L962.8,407 L982.9,378 L1003.1,407 L1023.2,407 L1043.4,407 L1063.5,407 L1083.7,353 L1103.8,361 L1124.0,357" fill="none" stroke="#5c91a4" stroke-opacity=".2" stroke-width="1" stroke-dasharray="3 5"/>
+<g><title>Week of 2026-10-25: 25 contributions</title><rect x="1116.0" y="305" width="16" height="149" rx="4" fill="#3fba9e"/><path d="M1119.0 317h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 329h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 341h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 353h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 365h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 377h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 389h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 401h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 413h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 425h10" stroke="#ffffff" stroke-opacity=".35"/><path d="M1119.0 437h10" stroke="#ffffff" stroke-opacity=".35"/></g>
+<path d="M76.0,407 L96.2,407 L116.3,407 L136.5,372 L156.6,366 L176.8,331 L196.9,318 L217.1,372 L237.2,407 L257.4,357 L277.5,331 L297.7,339 L317.8,361 L338.0,407 L358.2,378 L378.3,407 L398.5,407 L418.6,407 L438.8,320 L458.9,323 L479.1,333 L499.2,264 L519.4,387 L539.5,407 L559.7,407 L579.8,407 L600.0,407 L620.2,407 L640.3,407 L660.5,407 L680.6,407 L700.8,407 L720.9,387 L741.1,407 L761.2,407 L781.4,407 L801.5,407 L821.7,407 L841.8,407 L862.0,407 L882.2,407 L902.3,407 L922.5,407 L942.6,407 L962.8,407 L982.9,378 L1003.1,407 L1023.2,407 L1043.4,407 L1063.5,407 L1083.7,353 L1103.8,361 L1124.0,305" fill="none" stroke="#5c91a4" stroke-opacity=".2" stroke-width="1" stroke-dasharray="3 5"/>
 <g class="moving" style="transform:translate(76px,407px)"><g transform="scale(1.25)"><path d="M-12-16h24v14h-24z" fill="#172b42"/><path d="M-9-13h18v7h-18z" fill="#c5f36b"/><path d="M-6-12h3v3h-3zm9 0h3v3H3z" fill="#172b42"/><path d="M-15-12h3v7h-3zm27 0h3v7h-3zM-8-2h5v3h-5zm11 0h5v3H3z" fill="#172b42"/><path d="M-1-22h2v6h-2z" fill="#172b42"/><circle cy="-23" r="3" fill="#7b6bf1"/></g></g>
 <g transform="translate(1137 405)"><path d="M0-27V48" stroke="#172b42" stroke-width="2"/><path d="M1-27h19l-7 9 7 9H1z" fill="#7b6bf1"/></g>
 </svg>
