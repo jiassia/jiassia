@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="508" viewBox="0 0 1200 508" role="img" aria-labelledby="title desc">
 <title id="title">jiassia's commit landscape</title>
-<desc id="desc">A tiny rover travels over 53 weeks of real GitHub contributions. 262 contributions from 2025-11-09 to 2026-11-08. Each column is one week.</desc>
+<desc id="desc">A tiny rover travels over 53 weeks of real GitHub contributions. 262 contributions from 2025-11-09 to 2026-11-09. Each column is one week.</desc>
 <defs>
  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#dce5eb"/></pattern>
  <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#fafcfe"/><stop offset="1" stop-color="#eff6f5"/></linearGradient>
